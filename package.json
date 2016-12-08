@@ -4,7 +4,7 @@
   "description": "Example repo for using async/await in nodejs in 2016",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test DATABASE_URL=postgres://aro:aro@localhost/bellboy_test mocha --require source-map-support/register lib/test",
+    "test": "NODE_ENV=test mocha --require source-map-support/register lib/test",
     "watch": "babel src -d lib --source-maps inline --watch",
     "build": "babel src -d lib --source-maps inline",
     "start": "node lib/main/index.js",

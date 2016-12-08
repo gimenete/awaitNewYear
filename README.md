@@ -1,6 +1,6 @@
 # awaitNewYear
 
-Example repo for using async/await in Node.js in 2016
+Example repo for using async/await in Node.js in 2016. More information in the [original article](https://medium.com/@gimenete/await-newyear-learning-es7-734ca587907#.439osr8vb).
 
 - Uses [babel](https://babeljs.io), but only the minimal for supporting async/await
 - Includes [sourcemap support](https://github.com/evanw/node-source-map-support)

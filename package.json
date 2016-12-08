@@ -1,0 +1,45 @@
+{
+  "name": "awaitnewyear",
+  "version": "0.1.0",
+  "description": "Example repo for using async/await in nodejs in 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test DATABASE_URL=postgres://aro:aro@localhost/bellboy_test mocha --require source-map-support/register lib/test",
+    "watch": "babel src -d lib --source-maps inline --watch",
+    "build": "babel src -d lib --source-maps inline",
+    "start": "node lib/main/index.js",
+    "dev": "nodemon lib/main/index.js",
+    "postinstall": "npm run build",
+    "lint": "standard 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gimenete/awaitNewYear.git"
+  },
+  "keywords": [
+    "async",
+    "await",
+    "es7"
+  ],
+  "author": "Alberto Gimeno <gimenete@gimenete.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gimenete/awaitNewYear/issues"
+  },
+  "homepage": "https://github.com/gimenete/awaitNewYear#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "node-fetch": "^1.6.3",
+    "pug": "^2.0.0-beta6",
+    "source-map-support": "^0.4.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "standard": "^8.6.0"
+  }
+}
